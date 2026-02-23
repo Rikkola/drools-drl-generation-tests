@@ -1,0 +1,681 @@
+Model,Scenario,Format,Success,RulesFired,GenerationTimeMs,ErrorMessage
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,DRL,true,1,7824,
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,YAML,true,1,2687,
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,ENGLISH,true,1,3004,
+qwen2.5-coder:14b-instruct-q4_K_M,Senior Citizen Discount,DRL,true,2,2320,
+qwen2.5-coder:14b-instruct-q4_K_M,Senior Citizen Discount,YAML,true,2,2893,
+qwen2.5-coder:14b-instruct-q4_K_M,Senior Citizen Discount,ENGLISH,true,2,4804,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Basic,DRL,true,1,1801,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Basic,YAML,true,1,2270,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Basic,ENGLISH,false,0,4275,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Apply_Discount2034877328
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Apply_Discount2034877328
+The method setDiscountApplied(boolean) is undefined for the type Rule_Apply_Discount2034877328
+Syntax error, insert "";"" to complete Statement]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Tiered,DRL,true,1,4080,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Tiered,YAML,true,1,6069,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Tiered,ENGLISH,false,0,10185,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Apply_Premium_Discount1957289013
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Apply_Premium_Discount1957289013
+The method setDiscountTier(String) is undefined for the type Rule_Apply_Premium_Discount1957289013
+Syntax error, insert "";"" to complete Statement], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Apply_Gold_Discount1994122619
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Apply_Gold_Discount1994122619
+The method setDiscountTier(String) is undefined for the type Rule_Apply_Gold_Discount1994122619
+Syntax error, insert "";"" to complete Statement], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Apply_Silver_Discount1504539612
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Apply_Silver_Discount1504539612
+The method setDiscountTier(String) is undefined for the type Rule_Apply_Silver_Discount1504539612
+Syntax error, insert "";"" to complete Statement]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Simple Calculation,DRL,true,1,2363,
+qwen2.5-coder:14b-instruct-q4_K_M,Simple Calculation,YAML,false,0,2315,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method setTaxAmount(double) in the type Invoice is not applicable for the arguments (String)
+The method setTotal(double) in the type Invoice is not applicable for the arguments (String)]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Simple Calculation,ENGLISH,true,1,4674,
+qwen2.5-coder:14b-instruct-q4_K_M,Email Validation,DRL,true,1,1311,
+qwen2.5-coder:14b-instruct-q4_K_M,Email Validation,YAML,true,1,1755,
+qwen2.5-coder:14b-instruct-q4_K_M,Email Validation,ENGLISH,true,1,2490,
+qwen2.5-coder:14b-instruct-q4_K_M,Password Strength,DRL,true,1,2790,
+qwen2.5-coder:14b-instruct-q4_K_M,Password Strength,YAML,true,1,4487,
+qwen2.5-coder:14b-instruct-q4_K_M,Password Strength,ENGLISH,true,1,6170,
+qwen2.5-coder:14b-instruct-q4_K_M,Age Classification,DRL,true,1,3445,
+qwen2.5-coder:14b-instruct-q4_K_M,Age Classification,YAML,true,1,5450,
+qwen2.5-coder:14b-instruct-q4_K_M,Age Classification,ENGLISH,true,1,8248,
+qwen2.5-coder:14b-instruct-q4_K_M,Shipping Cost,DRL,true,1,3658,
+qwen2.5-coder:14b-instruct-q4_K_M,Shipping Cost,YAML,true,1,4879,
+qwen2.5-coder:14b-instruct-q4_K_M,Shipping Cost,ENGLISH,true,1,6395,
+qwen2.5-coder:14b-instruct-q4_K_M,Loyalty Points,DRL,true,1,1813,
+qwen2.5-coder:14b-instruct-q4_K_M,Loyalty Points,YAML,false,0,1960,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method setPoints(int) in the type Purchase is not applicable for the arguments (String)]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Loyalty Points,ENGLISH,true,1,3548,
+qwen2.5-coder:14b-instruct-q4_K_M,Inventory Alert,DRL,true,1,1620,
+qwen2.5-coder:14b-instruct-q4_K_M,Inventory Alert,YAML,true,1,2011,
+qwen2.5-coder:14b-instruct-q4_K_M,Inventory Alert,ENGLISH,true,1,3772,
+qwen2.5-coder:14b-instruct-q4_K_M,Loan Eligibility,DRL,true,1,2019,
+qwen2.5-coder:14b-instruct-q4_K_M,Loan Eligibility,YAML,true,1,2420,
+qwen2.5-coder:14b-instruct-q4_K_M,Loan Eligibility,ENGLISH,true,1,5526,
+qwen2.5-coder:14b-instruct-q4_K_M,Insurance Premium Tier,DRL,true,1,3569,
+qwen2.5-coder:14b-instruct-q4_K_M,Insurance Premium Tier,YAML,true,1,5028,
+qwen2.5-coder:14b-instruct-q4_K_M,Insurance Premium Tier,ENGLISH,true,1,7683,
+qwen2.5-coder:14b-instruct-q4_K_M,Tax Bracket,DRL,true,1,3940,
+qwen2.5-coder:14b-instruct-q4_K_M,Tax Bracket,YAML,true,1,4962,
+qwen2.5-coder:14b-instruct-q4_K_M,Tax Bracket,ENGLISH,true,1,8047,
+qwen2.5-coder:14b-instruct-q4_K_M,Status Transition,DRL,true,1,1895,
+qwen2.5-coder:14b-instruct-q4_K_M,Status Transition,YAML,true,1,2336,
+qwen2.5-coder:14b-instruct-q4_K_M,Status Transition,ENGLISH,true,1,4059,
+qwen2.5-coder:14b-instruct-q4_K_M,Priority Assignment,DRL,true,1,3464,
+qwen2.5-coder:14b-instruct-q4_K_M,Priority Assignment,YAML,true,1,4829,
+qwen2.5-coder:14b-instruct-q4_K_M,Priority Assignment,ENGLISH,true,1,7147,
+qwen2.5-coder:14b-instruct-q4_K_M,Grade Calculation,DRL,true,1,4456,
+qwen2.5-coder:14b-instruct-q4_K_M,Grade Calculation,YAML,true,1,7698,
+qwen2.5-coder:14b-instruct-q4_K_M,Grade Calculation,ENGLISH,true,1,9891,
+granite-code:8b,Adult Validation,DRL,true,1,42611,
+granite-code:8b,Adult Validation,YAML,true,1,1084,
+granite-code:8b,Adult Validation,ENGLISH,true,1,2045,
+granite-code:8b,Senior Citizen Discount,DRL,true,2,2254,
+granite-code:8b,Senior Citizen Discount,YAML,false,0,5135,"YAML parsing error: while scanning a simple key
+ in 'string', line 36, column 1:
+    This YAML code defines the fact  ... 
+    ^
+could not find expected ':'
+ in 'string', line 36, column 363:
+     ... e 'discountPercent' field to 15.
+                                         ^
+"
+granite-code:8b,Senior Citizen Discount,ENGLISH,false,0,3300,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error Syntax error on token(s), misplaced construct(s)
+discountPercent cannot be resolved to a type
+Syntax error on token ""15"", ; expected]]"
+granite-code:8b,Order Discount - Basic,DRL,true,1,1666,
+granite-code:8b,Order Discount - Basic,YAML,false,0,2538,"YAML parsing error: while scanning a simple key
+ in 'string', line 17, column 1:
+    This rule checks if the 'total'  ... 
+    ^
+could not find expected ':'
+ in 'string', line 17, column 200:
+     ... ue for that specific Order fact.
+                                         ^
+"
+granite-code:8b,Order Discount - Basic,ENGLISH,true,1,2729,
+granite-code:8b,Order Discount - Tiered,DRL,false,0,3623,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Discount_$u45$_Silver1303833445
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Discount_$u45$_Silver1303833445
+The method setDiscountTier(String) is undefined for the type Rule_Discount_$u45$_Silver1303833445
+Syntax error, insert "";"" to complete Statement], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Discount_$u45$_Premium730632394
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Discount_$u45$_Premium730632394
+The method setDiscountTier(String) is undefined for the type Rule_Discount_$u45$_Premium730632394
+Syntax error, insert "";"" to complete Statement], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Discount_$u45$_Gold2114342692
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Discount_$u45$_Gold2114342692
+The method setDiscountTier(String) is undefined for the type Rule_Discount_$u45$_Gold2114342692
+Syntax error, insert "";"" to complete Statement]]"
+granite-code:8b,Order Discount - Tiered,YAML,true,1,5045,
+granite-code:8b,Order Discount - Tiered,ENGLISH,false,0,12702,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=26, column=0
+   text=Rule Compilation error The method setDiscountPercent(int) is undefined for the type Order
+total cannot be resolved to a variable
+discountPercent cannot be resolved to a variable], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error The method setDiscountPercent(int) is undefined for the type Order
+total cannot be resolved to a variable
+discountPercent cannot be resolved to a variable], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=8, column=0
+   text=Rule Compilation error The method setDiscountPercent(int) is undefined for the type Order
+total cannot be resolved to a variable
+discountPercent cannot be resolved to a variable]]"
+granite-code:8b,Simple Calculation,DRL,false,0,1679,Execution failed: class org.drools.generated.Rule_Calculate_Tax1382487753 tried to access protected field org.drools.generated.Invoice.subtotal (org.drools.generated.Rule_Calculate_Tax1382487753 is in unnamed module of loader org.drools.wiring.dynamic.PackageClassLoader @5dab9e7f; org.drools.generated.Invoice is in unnamed module of loader org.drools.wiring.dynamic.DynamicProjectClassLoader$DefaultInternalTypesClassLoader @3f33794c)
+granite-code:8b,Simple Calculation,YAML,false,0,2385,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method setTaxAmount(double) in the type Invoice is not applicable for the arguments (String)
+The method setTotal(double) in the type Invoice is not applicable for the arguments (String)]]"
+granite-code:8b,Simple Calculation,ENGLISH,false,0,2482,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error subtotal cannot be resolved to a variable
+subtotal cannot be resolved to a variable
+The method getTaxAmount() is undefined for the type Rule_CalculateTax941727281]]"
+granite-code:8b,Email Validation,DRL,true,1,1053,
+granite-code:8b,Email Validation,YAML,false,0,2041,"YAML parsing error: while scanning a simple key
+ in 'string', line 16, column 1:
+    This rule checks if the 'email'  ... 
+    ^
+could not find expected ':'
+ in 'string', line 16, column 225:
+     ... sence of ""@"" in the email field.
+                                         ^
+"
+granite-code:8b,Email Validation,ENGLISH,false,0,1933,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error The method setValid(boolean) is undefined for the type EmailAddress]]"
+granite-code:8b,Password Strength,DRL,false,0,2437,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Password Strength], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Password Strength]]"
+granite-code:8b,Password Strength,YAML,false,0,3576,ERROR: Field '$password' used in rule but not declared in definition of type 'Password'
+granite-code:8b,Password Strength,ENGLISH,false,0,4577,"ERROR: Field 'length' used in rule but not declared in definition of type 'Password'
+ERROR: Field 'length' used in rule but not declared in definition of type 'Password'"
+granite-code:8b,Age Classification,DRL,true,1,3404,
+granite-code:8b,Age Classification,YAML,false,0,7272,"YAML parsing error: while scanning a simple key
+ in 'string', line 52, column 1:
+    This YAML rule defines four cond ... 
+    ^
+could not find expected ':'
+ in 'string', line 52, column 512:
+     ... sed on the condition that fired.
+                                         ^
+"
+granite-code:8b,Age Classification,ENGLISH,false,0,7342,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Duplicate rule name: Classify Person by Age], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=21, column=0
+   text=Duplicate rule name: Classify Person by Age], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=28, column=0
+   text=Duplicate rule name: Classify Person by Age], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Rule Compilation error The method setCategory(String) is undefined for the type Person], Message [id=5, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=21, column=0
+   text=Rule Compilation error The method setCategory(String) is undefined for the type Person], Message [id=6, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error The method setCategory(String) is undefined for the type Person], Message [id=7, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=28, column=0
+   text=Rule Compilation error The method setCategory(String) is undefined for the type Person]]"
+granite-code:8b,Shipping Cost,DRL,true,1,3002,
+granite-code:8b,Shipping Cost,YAML,false,0,2164,"YAML parsing error: while scanning a simple key
+ in 'string', line 17, column 1:
+    This rule will fire if the order ... 
+    ^
+could not find expected ':'
+ in 'string', line 17, column 116:
+     ... pping cost to 0 (free shipping).
+                                         ^
+"
+granite-code:8b,Shipping Cost,ENGLISH,false,0,4932,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Rule Compilation error The method setShippingCost(double) is undefined for the type ShippingOrder], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error The method setShippingCost(int) is undefined for the type ShippingOrder], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=21, column=0
+   text=Rule Compilation error The method setShippingCost(double) is undefined for the type ShippingOrder]]"
+granite-code:8b,Loyalty Points,DRL,false,0,1487,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=-1, column=0
+   text=You're trying to use the Truth Maintenance System without having imported it. Please add the module org.drools:drools-tms to your classpath.]]"
+granite-code:8b,Loyalty Points,YAML,false,0,2523,"YAML parsing error: while scanning a simple key
+ in 'string', line 16, column 1:
+    This rule calculates the number  ... 
+    ^
+could not find expected ':'
+ in 'string', line 16, column 290:
+     ... field with the calculated value.
+                                         ^
+"
+granite-code:8b,Loyalty Points,ENGLISH,false,0,4293,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error calculate cannot be resolved to a type
+Syntax error on token ""points"", ; expected
+Syntax error on token ""as"", assert expected
+Type mismatch: cannot convert from double to boolean
+Syntax error, insert "";"" to complete AssertStatement]]"
+granite-code:8b,Inventory Alert,DRL,true,1,1500,
+granite-code:8b,Inventory Alert,YAML,true,1,1716,
+granite-code:8b,Inventory Alert,ENGLISH,true,1,1791,
+granite-code:8b,Loan Eligibility,DRL,true,1,1882,
+granite-code:8b,Loan Eligibility,YAML,false,0,2747,"YAML parsing error: while scanning a simple key
+ in 'string', line 18, column 1:
+    This rule checks if the income,  ... 
+    ^
+could not find expected ':'
+ in 'string', line 18, column 210:
+     ...  true for that loan application.
+                                         ^
+"
+granite-code:8b,Loan Eligibility,ENGLISH,false,0,3982,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method setEligible(boolean) is undefined for the type LoanApplication]]"
+granite-code:8b,Insurance Premium Tier,DRL,true,1,3074,
+granite-code:8b,Insurance Premium Tier,YAML,false,0,5334,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Duplicate rule name: Assign Premium Tier], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Duplicate rule name: Assign Premium Tier]]"
+granite-code:8b,Insurance Premium Tier,ENGLISH,false,0,6681,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=15, column=0
+   text=Duplicate rule name: InsuranceApplicantPremiumTierRule], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=22, column=0
+   text=Duplicate rule name: InsuranceApplicantPremiumTierRule], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=22, column=0
+   text=Rule Compilation error The method setPremiumTier(String) is undefined for the type InsuranceApplicant], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=8, column=0
+   text=Rule Compilation error The method setPremiumTier(String) is undefined for the type InsuranceApplicant], Message [id=5, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=15, column=0
+   text=Rule Compilation error The method setPremiumTier(String) is undefined for the type InsuranceApplicant]]"
+granite-code:8b,Tax Bracket,DRL,false,0,3227,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: assign tax rate], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: assign tax rate]]"
+granite-code:8b,Tax Bracket,YAML,false,0,2522,"YAML parsing error: while scanning a simple key
+ in 'string', line 17, column 1:
+    This rule will fire when the inc ... 
+    ^
+could not find expected ':'
+ in 'string', line 17, column 147:
+     ... ax rate to 10 for that TaxPayer.
+                                         ^
+"
+granite-code:8b,Tax Bracket,ENGLISH,false,0,9712,"ERROR: [ERR 102] Line 18:38 mismatched input 'and' in rule ""Assign 22% Tax Rate if Income is between $30,000 and $80,000""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:8b,Status Transition,DRL,true,1,1334,
+granite-code:8b,Status Transition,YAML,false,0,2049,"YAML parsing error: while scanning a simple key
+ in 'string', line 17, column 1:
+    This rule will fire when a task  ... 
+    ^
+could not find expected ':'
+ in 'string', line 17, column 149:
+     ... e newStatus field to ""APPROVED"".
+                                         ^
+"
+granite-code:8b,Status Transition,ENGLISH,true,1,2506,
+granite-code:8b,Priority Assignment,DRL,true,1,1334,
+granite-code:8b,Priority Assignment,YAML,false,0,5651,"YAML parsing error: while scanning a simple key
+ in 'string', line 56, column 1:
+    In this rule, we have four rules ... 
+    ^
+could not find expected ':'
+ in 'string', line 56, column 318:
+     ... ch is to set its priority field.
+                                         ^
+"
+granite-code:8b,Priority Assignment,ENGLISH,true,1,6178,
+granite-code:8b,Grade Calculation,DRL,false,0,4878,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Duplicate rule name: assignGrade], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Duplicate rule name: assignGrade], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=31, column=0
+   text=Duplicate rule name: assignGrade], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=38, column=0
+   text=Duplicate rule name: assignGrade]]"
+granite-code:8b,Grade Calculation,YAML,false,0,6038,"YAML parsing error: while scanning a simple key
+ in 'string', line 64, column 1:
+    This YAML rule will assign grade ... 
+    ^
+could not find expected ':'
+ in 'string', line 64, column 261:
+     ... ject with the appropriate value.
+                                         ^
+"
+granite-code:8b,Grade Calculation,ENGLISH,false,0,10110,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=15, column=0
+   text=Duplicate rule name: Assign Grade Based on Score], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=22, column=0
+   text=Duplicate rule name: Assign Grade Based on Score], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=29, column=0
+   text=Duplicate rule name: Assign Grade Based on Score], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=36, column=0
+   text=Duplicate rule name: Assign Grade Based on Score]]"
+granite-code:20b,Adult Validation,DRL,true,1,61712,
+granite-code:20b,Adult Validation,YAML,true,1,1955,
+granite-code:20b,Adult Validation,ENGLISH,true,1,3869,
+granite-code:20b,Senior Citizen Discount,DRL,true,2,2561,
+granite-code:20b,Senior Citizen Discount,YAML,true,2,4011,
+granite-code:20b,Senior Citizen Discount,ENGLISH,true,2,8547,
+granite-code:20b,Order Discount - Basic,DRL,false,0,2685,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Order_Discount21819388
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Order_Discount21819388
+The method setDiscountApplied(boolean) is undefined for the type Rule_Order_Discount21819388]]"
+granite-code:20b,Order Discount - Basic,YAML,true,1,3042,
+granite-code:20b,Order Discount - Basic,ENGLISH,false,0,7231,ERROR: Field '' used in rule but not declared in definition of type 'Order'
+granite-code:20b,Order Discount - Tiered,DRL,false,0,7748,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'DRL' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Order Discount - Tiered,YAML,true,1,8713,
+granite-code:20b,Order Discount - Tiered,ENGLISH,true,1,17670,
+granite-code:20b,Simple Calculation,DRL,false,0,3348,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'DRL' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Simple Calculation,YAML,false,0,3120,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method setTaxAmount(double) in the type Invoice is not applicable for the arguments (String)
+The method setTotal(double) in the type Invoice is not applicable for the arguments (String)]]"
+granite-code:20b,Simple Calculation,ENGLISH,true,1,6210,
+granite-code:20b,Email Validation,DRL,false,0,2367,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'DRL' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Email Validation,YAML,false,0,2755,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=8, column=0
+   text=Rule Compilation error $emailAddress cannot be resolved to a variable
+The method setValid(boolean) is undefined for the type Object]]"
+granite-code:20b,Email Validation,ENGLISH,false,0,4143,"ERROR: [ERR 102] Line 8:49 mismatched input '""""' in rule ""Set Valid flag to true if email contains ""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Password Strength,DRL,true,1,5379,
+granite-code:20b,Password Strength,YAML,false,0,5912,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Password Strength Check], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Password Strength Check]]"
+granite-code:20b,Password Strength,ENGLISH,true,1,8040,
+granite-code:20b,Age Classification,DRL,true,1,7124,
+granite-code:20b,Age Classification,YAML,true,1,8727,
+granite-code:20b,Age Classification,ENGLISH,true,1,11128,
+granite-code:20b,Shipping Cost,DRL,false,0,5653,"ERROR: Field 'total' used in rule but not declared in definition of type 'ShippingOrder'
+ERROR: Field 'total' used in rule but not declared in definition of type 'ShippingOrder'
+ERROR: Field 'total' used in rule but not declared in definition of type 'ShippingOrder'
+ERROR: Field 'total' used in rule but not declared in definition of type 'ShippingOrder'"
+granite-code:20b,Shipping Cost,YAML,true,1,6291,
+granite-code:20b,Shipping Cost,ENGLISH,true,1,12299,
+granite-code:20b,Loyalty Points,DRL,false,0,2660,Code looks good
+granite-code:20b,Loyalty Points,YAML,false,0,2423,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method setPoints(int) in the type Purchase is not applicable for the arguments (String)]]"
+granite-code:20b,Loyalty Points,ENGLISH,false,0,6744,Execution successful
+granite-code:20b,Inventory Alert,DRL,false,0,2773,ERROR: Field 'this' used in rule but not declared in definition of type 'Product'
+granite-code:20b,Inventory Alert,YAML,false,0,2258,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error $this cannot be resolved to a variable
+The method setLowStock(boolean) is undefined for the type Object]]"
+granite-code:20b,Inventory Alert,ENGLISH,true,1,4127,
+granite-code:20b,Loan Eligibility,DRL,false,0,3748,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'DRL' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Loan Eligibility,YAML,false,0,3217,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error $this cannot be resolved to a variable
+The method setEligible(boolean) is undefined for the type Object]]"
+granite-code:20b,Loan Eligibility,ENGLISH,true,1,5621,
+granite-code:20b,Insurance Premium Tier,DRL,true,1,6207,
+granite-code:20b,Insurance Premium Tier,YAML,true,1,7341,
+granite-code:20b,Insurance Premium Tier,ENGLISH,true,1,12751,
+granite-code:20b,Tax Bracket,DRL,true,1,5935,
+granite-code:20b,Tax Bracket,YAML,true,1,7385,
+granite-code:20b,Tax Bracket,ENGLISH,true,1,11595,
+granite-code:20b,Status Transition,DRL,false,0,3612,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'DRL' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite-code:20b,Status Transition,YAML,false,0,2837,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error $this cannot be resolved to a variable
+The method setNewStatus(String) is undefined for the type Object]]"
+granite-code:20b,Status Transition,ENGLISH,true,1,4676,
+granite-code:20b,Priority Assignment,DRL,true,1,5602,
+granite-code:20b,Priority Assignment,YAML,false,0,6242,Failed to parse YAML: class java.lang.String cannot be cast to class java.util.List (java.lang.String and java.util.List are in module java.base of loader 'bootstrap')
+granite-code:20b,Priority Assignment,ENGLISH,false,0,9453,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Set Priority based on Severity], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Set Priority based on Severity], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=30, column=0
+   text=Duplicate rule name: Set Priority based on Severity]]"
+granite-code:20b,Grade Calculation,DRL,true,1,8126,
+granite-code:20b,Grade Calculation,YAML,false,0,9431,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Duplicate rule name: Assign Grade], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Duplicate rule name: Assign Grade], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=31, column=0
+   text=Duplicate rule name: Assign Grade], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=38, column=0
+   text=Duplicate rule name: Assign Grade]]"
+granite-code:20b,Grade Calculation,ENGLISH,false,0,16050,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Duplicate rule name: Set Grade for Students], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Duplicate rule name: Set Grade for Students], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=31, column=0
+   text=Duplicate rule name: Set Grade for Students], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=38, column=0
+   text=Duplicate rule name: Set Grade for Students]]"
+granite3.3:8b,Adult Validation,DRL,true,1,26848,
+granite3.3:8b,Adult Validation,YAML,true,1,1090,
+granite3.3:8b,Adult Validation,ENGLISH,true,1,1551,
+granite3.3:8b,Senior Citizen Discount,DRL,false,0,1705,"ERROR: [ERR 102] Line 9:10 mismatched input '('
+ERROR: [ERR 102] Line 9:29 mismatched input ','
+ERROR: [ERR 102] Line 15:9 mismatched input '>=' in rule ""Mark Senior Status""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Senior Citizen Discount,YAML,true,2,1888,
+granite3.3:8b,Senior Citizen Discount,ENGLISH,true,2,3399,
+granite3.3:8b,Order Discount - Basic,DRL,false,0,1153,"ERROR: [ERR 102] Line 5:12 mismatched input 'String'
+ERROR: [ERR 102] Line 6:10 mismatched input 'double'
+ERROR: [ERR 102] Line 7:20 mismatched input 'int'
+ERROR: [ERR 102] Line 8:20 mismatched input 'boolean'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Order Discount - Basic,YAML,true,1,1257,
+granite3.3:8b,Order Discount - Basic,ENGLISH,true,1,1688,
+granite3.3:8b,Order Discount - Tiered,DRL,false,0,2260,"ERROR: [ERR 102] Line 12:31 mismatched input 'and' in rule ""TieredDiscount10""
+ERROR: [ERR 102] Line 19:30 mismatched input 'and' in rule ""TieredDiscount5""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Order Discount - Tiered,YAML,false,0,3439,ERROR: Missing type definition for fact type: $order
+granite3.3:8b,Order Discount - Tiered,ENGLISH,true,1,7549,
+granite3.3:8b,Simple Calculation,DRL,false,0,1256,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error let cannot be resolved to a type
+Syntax error on token ""0.1d"", new expected
+modify cannot be resolved to a type
+Syntax error on token(s), misplaced construct(s)
+Syntax error on token ""}"", delete this token]]"
+granite3.3:8b,Simple Calculation,YAML,false,0,1337,ERROR: Missing type definition for fact type: $invoice
+granite3.3:8b,Simple Calculation,ENGLISH,true,1,1752,
+granite3.3:8b,Email Validation,DRL,false,0,1008,"ERROR: [ERR 102] Line 7:16 mismatched input '('
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Email Validation,YAML,true,1,1146,
+granite3.3:8b,Email Validation,ENGLISH,false,0,1222,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error The method setValid(boolean) is undefined for the type EmailAddress]]"
+granite3.3:8b,Password Strength,DRL,false,0,1850,"ERROR: [ERR 102] Line 5:11 mismatched input 'int'
+ERROR: [ERR 102] Line 6:13 mismatched input 'String'
+ERROR: [ERR 102] Line 7:10 mismatched input 'String'
+ERROR: [ERR 102] Line 19:35 mismatched input 'and' in rule ""PasswordStrength_Medium""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Password Strength,YAML,true,1,3550,
+granite3.3:8b,Password Strength,ENGLISH,true,1,3031,
+granite3.3:8b,Age Classification,DRL,false,0,2458,"ERROR: [ERR 102] Line 8:10 mismatched input '('
+ERROR: [ERR 102] Line 8:29 mismatched input ','
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Age Classification,YAML,true,1,2964,
+granite3.3:8b,Age Classification,ENGLISH,true,1,4316,
+granite3.3:8b,Shipping Cost,DRL,false,0,1879,ERROR: Field '50' used in rule but not declared in definition of type 'ShippingOrder'
+granite3.3:8b,Shipping Cost,YAML,false,0,2589,"ERROR: Missing type definition for fact type: $order
+ERROR: Field 'total' used in rule but not declared in definition of type '$order'
+ERROR: Field 'total' used in rule but not declared in definition of type '$order'
+ERROR: Field 'total' used in rule but not declared in definition of type '$order'
+ERROR: Field 'total' used in rule but not declared in definition of type '$order'"
+granite3.3:8b,Shipping Cost,ENGLISH,false,0,4039,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=15, column=0
+   text=Duplicate rule name: Shipping Cost Rule], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=22, column=0
+   text=Duplicate rule name: Shipping Cost Rule]]"
+granite3.3:8b,Loyalty Points,DRL,false,0,1439,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method modify(Purchase) is undefined for the type Rule_CalculatePoints681980564]]"
+granite3.3:8b,Loyalty Points,YAML,false,0,1617,ERROR: Missing type definition for fact type: $purchase
+granite3.3:8b,Loyalty Points,ENGLISH,false,0,1764,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=8, column=0
+   text=Rule Compilation error amount cannot be resolved to a variable]]"
+granite3.3:8b,Inventory Alert,DRL,true,1,1405,
+granite3.3:8b,Inventory Alert,YAML,false,0,1806,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=-1, column=0
+   text=Unable to Analyse Expression quantity < $threshold:
+[Error: unable to resolve method using strict-mode: org.drools.generated.Product.$threshold()]
+[Near : {... quantity < $threshold ....}]
+                        ^]]"
+granite3.3:8b,Inventory Alert,ENGLISH,true,1,2634,
+granite3.3:8b,Loan Eligibility,DRL,true,1,1636,
+granite3.3:8b,Loan Eligibility,YAML,true,1,2462,
+granite3.3:8b,Loan Eligibility,ENGLISH,true,1,2861,
+granite3.3:8b,Insurance Premium Tier,DRL,false,0,4203,"ERROR: [ERR 102] Line 9:22 mismatched input '('
+ERROR: [ERR 102] Line 9:40 mismatched input 'is'
+ERROR: [ERR 102] Line 9:47 mismatched input 'null'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Insurance Premium Tier,YAML,false,0,4805,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Duplicate rule name: Assign Premium Tier], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Duplicate rule name: Assign Premium Tier]]"
+granite3.3:8b,Insurance Premium Tier,ENGLISH,true,1,7049,
+granite3.3:8b,Tax Bracket,DRL,false,0,4150,"ERROR: [ERR 102] Line 8:15 mismatched input '('
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Tax Bracket,YAML,false,0,5457,"ERROR: Missing type definition for fact type: $taxPayer
+ERROR: Field 'income' used in rule but not declared in definition of type '$taxPayer'
+ERROR: Field 'and - income' used in rule but not declared in definition of type '$taxPayer'"
+granite3.3:8b,Tax Bracket,ENGLISH,false,0,5438,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=15, column=0
+   text=Duplicate rule name: Tax Rate Assignment Rule], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=22, column=0
+   text=Duplicate rule name: Tax Rate Assignment Rule]]"
+granite3.3:8b,Status Transition,DRL,false,0,1228,"ERROR: [ERR 102] Line 4:11 mismatched input 'String'
+ERROR: [ERR 102] Line 5:18 mismatched input 'String'
+ERROR: [ERR 102] Line 6:14 mismatched input 'String'
+ERROR: [ERR 102] Line 7:11 mismatched input 'String'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Status Transition,YAML,false,0,2193,"ERROR: Missing type definition for fact type: $task
+ERROR: Field 'currentStatus' used in rule but not declared in definition of type '$task'
+ERROR: Field 'action' used in rule but not declared in definition of type '$task'"
+granite3.3:8b,Status Transition,ENGLISH,true,1,2123,
+granite3.3:8b,Priority Assignment,DRL,false,0,3519,"ERROR: [ERR 102] Line 8:10 mismatched input '('
+ERROR: [ERR 102] Line 8:37 mismatched input ','
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3.3:8b,Priority Assignment,YAML,false,0,4964,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Assign Priority Based on Severity], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Assign Priority Based on Severity], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=30, column=0
+   text=Duplicate rule name: Assign Priority Based on Severity]]"
+granite3.3:8b,Priority Assignment,ENGLISH,true,1,4920,
+granite3.3:8b,Grade Calculation,DRL,false,0,4320,Code looks good
+granite3.3:8b,Grade Calculation,YAML,false,0,1895,Failed to parse YAML: class java.util.LinkedHashMap cannot be cast to class java.lang.String (java.util.LinkedHashMap and java.lang.String are in module java.base of loader 'bootstrap')
+granite3.3:8b,Grade Calculation,ENGLISH,false,0,8672,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Assign Grade Rule], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Assign Grade Rule], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=30, column=0
+   text=Duplicate rule name: Assign Grade Rule], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=37, column=0
+   text=Duplicate rule name: Assign Grade Rule]]"
+granite3-moe:3b,Adult Validation,DRL,false,0,17653,"ERROR: [ERR 102] Line 5:15 mismatched input '{'
+ERROR: [ERR 102] Line 14:15 mismatched input '>=' in rule ""Check if Person is Adult""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Adult Validation,YAML,false,0,456,"ERROR: Missing type definition for fact type: Person
+ERROR: Field 'age' used in rule but not declared in definition of type 'Person'"
+granite3-moe:3b,Adult Validation,ENGLISH,false,0,1563,Execution successful
+granite3-moe:3b,Senior Citizen Discount,DRL,false,0,1354,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 5:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 102] Line 22:31 mismatched input 'not' in rule ""Mark Senior""
+ERROR: [ERR 102] Line 31:31 mismatched input 'senior' in rule ""Apply Discount""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Senior Citizen Discount,YAML,false,0,935,Execution successful
+granite3-moe:3b,Senior Citizen Discount,ENGLISH,false,0,4009,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '1.' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Order Discount - Basic,DRL,false,0,765,"ERROR: [ERR 102] Line 5:14 mismatched input '{'
+ERROR: [ERR 102] Line 15:17 mismatched input '>' in rule ""Check if Order total is greater than 100.0""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Order Discount - Basic,YAML,false,0,641,Failed to parse YAML: class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+granite3-moe:3b,Order Discount - Basic,ENGLISH,false,0,1316,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_CheckOrderTotal1985970235
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_CheckOrderTotal1985970235
+The method setDiscountApplied(boolean) is undefined for the type Rule_CheckOrderTotal1985970235]]"
+granite3-moe:3b,Order Discount - Tiered,DRL,false,0,6312,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 5:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 33:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 61:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 89:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 117:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 145:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 173:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 201:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Order Discount - Tiered,YAML,false,0,1384,"ERROR: Missing type definition for fact type: Order
+ERROR: Field 'discountTier' used in rule but not declared in definition of type 'Order'"
+granite3-moe:3b,Order Discount - Tiered,ENGLISH,false,0,2755,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=-1, column=0
+   text=Unable to Analyse Expression total == value:
+[Error: unable to resolve method using strict-mode: org.drools.generated.Order.value()]
+[Near : {... total == value ....}]
+                      ^], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=-1, column=0
+   text=Unable to Analyse Expression discountTier == value:
+[Error: unable to resolve method using strict-mode: org.drools.generated.Order.value()]
+[Near : {... discountTier == value ....}]
+                             ^], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error value cannot be resolved to a variable]]"
+granite3-moe:3b,Simple Calculation,DRL,false,0,735,"ERROR: [ERR 102] Line 5:16 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Simple Calculation,YAML,false,0,658,"ERROR: Missing type definition for fact type: Invoice
+ERROR: Field 'subtotal' used in rule but not declared in definition of type 'Invoice'
+ERROR: Field 'taxAmount' used in rule but not declared in definition of type 'Invoice'"
+granite3-moe:3b,Simple Calculation,ENGLISH,false,0,1645,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method modify(Invoice) is undefined for the type Rule_CalculateTaxAndTotal349527206
+Syntax error, insert "";"" to complete Statement
+subtotal cannot be resolved to a variable
+Syntax error, insert "";"" to complete BlockStatements
+subtotal cannot be resolved to a variable
+Syntax error, insert "";"" to complete Statement]]"
+granite3-moe:3b,Email Validation,DRL,false,0,504,"ERROR: [ERR 102] Line 3:21 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Email Validation,YAML,false,0,441,"ERROR: Missing type definition for fact type: EmailAddress
+ERROR: Field 'email' used in rule but not declared in definition of type 'EmailAddress'"
+granite3-moe:3b,Email Validation,ENGLISH,false,0,1141,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=7, column=0
+   text=Rule Compilation error The method setValid(boolean) is undefined for the type EmailAddress
+The method setValid(String) is undefined for the type EmailAddress]]"
+granite3-moe:3b,Password Strength,DRL,false,0,1021,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Password Strength,YAML,false,0,683,Failed to parse YAML: class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+granite3-moe:3b,Password Strength,ENGLISH,false,0,2797,ERROR: Field '8' used in rule but not declared in definition of type 'Password'
+granite3-moe:3b,Age Classification,DRL,false,0,1312,"ERROR: [ERR 102] Line 5:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Age Classification,YAML,false,0,1049,"YAML parsing error: mapping values are not allowed here
+ in 'string', line 19, column 21:
+                    then: ""CHILD""
+                        ^
+"
+granite3-moe:3b,Age Classification,ENGLISH,false,0,4434,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '{' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Shipping Cost,DRL,false,0,2013,"ERROR: [ERR 102] Line 5:22 mismatched input '{'
+ERROR: [ERR 102] Line 27:8 mismatched input 'modify' in rule ""Shipping Cost""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Shipping Cost,YAML,false,0,770,Failed to parse YAML: class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+granite3-moe:3b,Shipping Cost,ENGLISH,false,0,6485,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '{' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Loyalty Points,DRL,false,0,813,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: [ERR 102] Line 15:19 mismatched input '{' in rule ""Calculate Points""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Loyalty Points,YAML,false,0,647,"ERROR: Missing type definition for fact type: Purchase
+ERROR: Field 'points' used in rule but not declared in definition of type 'Purchase'
+ERROR: Field 'amount' used in rule but not declared in definition of type 'Purchase'"
+granite3-moe:3b,Loyalty Points,ENGLISH,false,0,2114,"ERROR: [ERR 102] Line 26:4 mismatched input 'return' in function ""CalculatePoints""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Inventory Alert,DRL,false,0,653,"ERROR: [ERR 102] Line 5:16 mismatched input '{'
+ERROR: [ERR 102] Line 16:20 mismatched input '<' in rule ""Check if product quantity is less than the threshold""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Inventory Alert,YAML,false,0,497,Failed to parse YAML: class java.lang.Boolean cannot be cast to class java.lang.String (java.lang.Boolean and java.lang.String are in module java.base of loader 'bootstrap')
+granite3-moe:3b,Inventory Alert,ENGLISH,false,0,1217,ERROR: Field 'productId' used in rule but not declared in definition of type 'Product'
+granite3-moe:3b,Loan Eligibility,DRL,false,0,802,"ERROR: [ERR 102] Line 14:19 mismatched input '>=' in rule ""Check Eligibility""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Loan Eligibility,YAML,false,0,660,Failed to parse YAML: class java.lang.Boolean cannot be cast to class java.lang.String (java.lang.Boolean and java.lang.String are in module java.base of loader 'bootstrap')
+granite3-moe:3b,Loan Eligibility,ENGLISH,false,0,2373,"ERROR: [ERR 102] Line 13:108 mismatched input '=' in rule ""eligible""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Insurance Premium Tier,DRL,false,0,1359,"ERROR: [ERR 102] Line 5:27 mismatched input '{'
+ERROR: [ERR 102] Line 15:18 mismatched input '==' in rule ""Assign Premium Tier""
+ERROR: [ERR 102] Line 23:18 mismatched input '==' in rule ""Assign Premium Tier (if not smoker and age > 50)""
+ERROR: [ERR 102] Line 32:18 mismatched input '==' in rule ""Assign Premium Tier (if not smoker and age <= 50)""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Insurance Premium Tier,YAML,false,0,735,"ERROR: [ERR 102] Line 5:51 mismatched input 'premiumTier' in rule ""Assign Premium Tier""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Insurance Premium Tier,ENGLISH,false,0,2475,"ERROR: [ERR 102] Line 20:8 mismatched input 'modify' in rule ""Assign Premium Tier""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Tax Bracket,DRL,false,0,1287,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: [ERR 102] Line 13:27 mismatched input ')' in rule ""Assign tax rate based on income""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Tax Bracket,YAML,false,0,611,"ERROR: [ERR 102] Line 5:41 mismatched input 'and' in rule ""Assign Tax Rate""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Tax Bracket,ENGLISH,false,0,3995,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '{' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Status Transition,DRL,false,0,704,"ERROR: [ERR 102] Line 5:13 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Status Transition,YAML,false,0,567,"ERROR: Missing type definition for fact type: Task
+ERROR: Field 'currentStatus' used in rule but not declared in definition of type 'Task'
+ERROR: Field 'action' used in rule but not declared in definition of type 'Task'"
+granite3-moe:3b,Status Transition,ENGLISH,false,0,1529,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '{' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Priority Assignment,DRL,false,0,1369,"ERROR: [ERR 102] Line 5:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Priority Assignment,YAML,false,0,516,"ERROR: [ERR 102] Line 5:50 mismatched input '=' in rule ""Assign Priority""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Priority Assignment,ENGLISH,false,0,2116,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '1.' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 102] Line 3:3 mismatched input '-'
+ERROR: [ERR 102] Line 11:7 mismatched input '$t' in rule ""Assign Priority Based on Severity""
+ERROR: [ERR 102] Line 22:11 mismatched input 'input' in rule ""Only One Rule Should Fire""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Grade Calculation,DRL,false,0,2760,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 5:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 29:0 mismatched input 'public' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite3-moe:3b,Grade Calculation,YAML,false,0,2274,"YAML parsing error: while parsing a block mapping
+ in 'string', line 11, column 9:
+            target: studentId
+            ^
+expected <block end>, but found '-'
+ in 'string', line 15, column 9:
+            - value: ""B""
+            ^
+"
+granite3-moe:3b,Grade Calculation,ENGLISH,false,0,5137,"DRL validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input '1.' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 107] Line 9:0 mismatched input '4.' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 102] Line 13:34 mismatched input 'and' in rule ""Assign Grade""
+ERROR: [ERR 102] Line 33:8 mismatched input 'modify' in rule ""Assign Grade (Second Rule)""
+ERROR: [ERR 102] Line 38:33 mismatched input 'and' in rule ""Assign Grade (Fourth Rule)""
+ERROR: [ERR 102] Line 45:33 mismatched input 'and' in rule ""Assign Grade (Fifth Rule)""
+ERROR: [ERR 102] Line 55:44 mismatched input '<eof>' in rule ""Assign Grade (Sixth Rule)""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."

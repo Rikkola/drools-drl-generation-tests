@@ -1,0 +1,45 @@
+Model,Scenario,Format,Success,RulesFired,GenerationTimeMs,ErrorMessage
+granite4:small-h,Adult Validation,DRL,true,1,26123,
+granite4:small-h,Adult Validation,YAML,true,1,17131,
+granite4:small-h,Senior Citizen Discount,DRL,true,2,21249,
+granite4:small-h,Senior Citizen Discount,YAML,true,2,29592,
+granite4:small-h,Order Discount - Basic,DRL,true,1,14811,
+granite4:small-h,Order Discount - Basic,YAML,true,1,21607,
+granite4:small-h,Order Discount - Tiered,DRL,true,1,39677,
+granite4:small-h,Order Discount - Tiered,YAML,true,1,56792,
+granite4:small-h,Simple Calculation,DRL,true,1,20301,
+granite4:small-h,Simple Calculation,YAML,false,0,22901,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method setTaxAmount(double) in the type Invoice is not applicable for the arguments (String)
+The method setTotal(double) in the type Invoice is not applicable for the arguments (String)]]"
+granite4:small-h,Email Validation,DRL,true,1,13872,
+granite4:small-h,Email Validation,YAML,true,1,15876,
+granite4:small-h,Password Strength,DRL,true,1,26712,
+granite4:small-h,Password Strength,YAML,true,1,42193,
+granite4:small-h,Age Classification,DRL,true,1,35636,
+granite4:small-h,Age Classification,YAML,true,1,54654,
+granite4:small-h,Shipping Cost,DRL,true,1,28698,
+granite4:small-h,Shipping Cost,YAML,false,0,43984,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Set Shipping Cost], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Set Shipping Cost]]"
+granite4:small-h,Loyalty Points,DRL,true,1,16142,
+granite4:small-h,Loyalty Points,YAML,false,0,19287,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=9, column=0
+   text=Rule Compilation error The method setPoints(int) in the type Purchase is not applicable for the arguments (String)]]"
+granite4:small-h,Inventory Alert,DRL,true,1,15478,
+granite4:small-h,Inventory Alert,YAML,true,1,20948,
+granite4:small-h,Loan Eligibility,DRL,true,1,18354,
+granite4:small-h,Loan Eligibility,YAML,true,1,25521,
+granite4:small-h,Insurance Premium Tier,DRL,true,1,34078,
+granite4:small-h,Insurance Premium Tier,YAML,true,1,43869,
+granite4:small-h,Tax Bracket,DRL,true,1,30524,
+granite4:small-h,Tax Bracket,YAML,false,0,45593,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Assign Tax Rate], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Assign Tax Rate]]"
+granite4:small-h,Status Transition,DRL,true,1,16966,
+granite4:small-h,Status Transition,YAML,true,1,21566,
+granite4:small-h,Priority Assignment,DRL,true,1,35845,
+granite4:small-h,Priority Assignment,YAML,false,0,46776,"Execution failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Assign Priority], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Assign Priority], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=30, column=0
+   text=Duplicate rule name: Assign Priority]]"
+granite4:small-h,Grade Calculation,DRL,true,1,42758,
+granite4:small-h,Grade Calculation,YAML,true,1,64896,

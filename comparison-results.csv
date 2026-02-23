@@ -1,0 +1,4 @@
+Model,Scenario,Format,Success,RulesFired,GenerationTimeMs,ErrorMessage
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,DRL,true,1,2417,
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,YAML,true,1,1757,
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,ENGLISH,true,1,3097,

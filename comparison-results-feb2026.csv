@@ -1,0 +1,570 @@
+Model,Scenario,Format,Success,RulesFired,GenerationTimeMs,ErrorMessage
+qwen3-coder-next,Adult Validation,DRL,true,1,66263,
+qwen3-coder-next,Age Classification,DRL,true,4,66116,
+qwen3-coder-next,Age Validation Simple,DRL,true,3,39727,
+qwen3-coder-next,Order Discount - Basic,DRL,true,1,31131,
+qwen3-coder-next,Bulk Order Discount,DRL,true,1,40275,
+qwen3-coder-next,Cart Validation,DRL,true,5,73026,
+qwen3-coder-next,Credit Card Approval,DRL,true,4,107977,
+qwen3-coder-next,Email Validation,DRL,true,1,23979,
+qwen3-coder-next,Grade Calculation,DRL,true,1,70287,
+qwen3-coder-next,Insurance Premium Tier,DRL,true,1,62755,
+qwen3-coder-next,Insurance Risk Assessment,DRL,true,4,102451,
+qwen3-coder-next,Inventory Alert,DRL,true,1,26413,
+qwen3-coder-next,Loan Approval Complex,DRL,true,3,76624,
+qwen3-coder-next,Loan Eligibility,DRL,true,1,34947,
+qwen3-coder-next,Loyalty Points,DRL,true,1,29892,
+qwen3-coder-next,Missing Document Alert,DRL,true,2,63817,
+qwen3-coder-next,Order Discount by Customer Type,DRL,true,4,124263,
+qwen3-coder-next,Order Fraud Detection,DRL,true,3,94563,
+qwen3-coder-next,Password Strength,DRL,true,1,63286,
+qwen3-coder-next,Priority Assignment,DRL,true,1,64425,
+qwen3-coder-next,Senior Citizen Discount,DRL,true,2,40037,
+qwen3-coder-next,Shipping Cost,DRL,true,1,58627,
+qwen3-coder-next,Shipping Method Priority,DRL,true,104,95741,
+qwen3-coder-next,Simple Calculation,DRL,true,1,36260,
+qwen3-coder-next,Status Transition,DRL,true,1,30964,
+qwen3-coder-next,Subscription Renewal,DRL,true,5,79734,
+qwen3-coder-next,Tax Bracket,DRL,true,1,66667,
+qwen3-coder-next,Tax Calculation Chain,DRL,true,10,160069,
+qwen3-coder-next,Order Discount - Tiered,DRL,true,1,75909,
+granite4:small-h,Adult Validation,DRL,true,1,60541,
+granite4:small-h,Age Classification,DRL,true,4,34534,
+granite4:small-h,Age Validation Simple,DRL,true,3,19408,
+granite4:small-h,Order Discount - Basic,DRL,true,1,16025,
+granite4:small-h,Bulk Order Discount,DRL,false,0,21146,"Test case 'Qualifies for VIP' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error The method setVip(boolean) is undefined for the type Customer]]"
+granite4:small-h,Cart Validation,DRL,true,5,39191,
+granite4:small-h,Credit Card Approval,DRL,false,0,53720,Test case 'Premium Card Approval' failed: Expected 1 rules to fire but got 2
+granite4:small-h,Email Validation,DRL,true,1,12237,
+granite4:small-h,Grade Calculation,DRL,true,1,41647,
+granite4:small-h,Insurance Premium Tier,DRL,true,1,34362,
+granite4:small-h,Insurance Risk Assessment,DRL,false,0,32760,Test case 'Medium Risk - Age Factor' failed: Expected 1 rules to fire but got 100
+granite4:small-h,Inventory Alert,DRL,true,1,14530,
+granite4:small-h,Loan Approval Complex,DRL,true,3,36937,
+granite4:small-h,Loan Eligibility,DRL,true,1,17498,
+granite4:small-h,Loyalty Points,DRL,true,1,15121,
+granite4:small-h,Missing Document Alert,DRL,true,2,31126,
+granite4:small-h,Order Discount by Customer Type,DRL,false,0,41191,"ERROR: [ERR 102] Line 14:8 mismatched input 'modify' in rule ""Apply premium discount""
+ERROR: [ERR 102] Line 27:8 mismatched input 'modify' in rule ""Apply regular discount""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4:small-h,Order Fraud Detection,DRL,true,3,48628,
+granite4:small-h,Password Strength,DRL,true,1,25459,
+granite4:small-h,Priority Assignment,DRL,true,1,34720,
+granite4:small-h,Senior Citizen Discount,DRL,true,2,19819,
+granite4:small-h,Shipping Cost,DRL,true,1,27623,
+granite4:small-h,Shipping Method Priority,DRL,true,205,60103,
+granite4:small-h,Simple Calculation,DRL,false,0,18610,Test case 'Calculate Tax' failed: class org.drools.generated.Rule_Calculate_Tax_and_Total1339384356 tried to access protected field org.drools.generated.Invoice.subtotal (org.drools.generated.Rule_Calculate_Tax_and_Total1339384356 is in unnamed module of loader org.drools.wiring.dynamic.PackageClassLoader @234a3b1d; org.drools.generated.Invoice is in unnamed module of loader org.drools.wiring.dynamic.DynamicProjectClassLoader$DefaultInternalTypesClassLoader @75899b9c)
+granite4:small-h,Status Transition,DRL,true,1,16387,
+granite4:small-h,Subscription Renewal,DRL,true,5,37139,
+granite4:small-h,Tax Bracket,DRL,true,1,29867,
+granite4:small-h,Tax Calculation Chain,DRL,true,10,92187,
+granite4:small-h,Order Discount - Tiered,DRL,true,1,38911,
+qwen2.5-coder:14b-instruct-q4_K_M,Adult Validation,DRL,true,1,23701,
+qwen2.5-coder:14b-instruct-q4_K_M,Age Classification,DRL,true,4,3274,
+qwen2.5-coder:14b-instruct-q4_K_M,Age Validation Simple,DRL,true,3,1724,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Basic,DRL,true,1,1618,
+qwen2.5-coder:14b-instruct-q4_K_M,Bulk Order Discount,DRL,false,0,1995,"Test case 'Qualifies for VIP' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error The method setVip(boolean) is undefined for the type Customer]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Cart Validation,DRL,true,5,3615,
+qwen2.5-coder:14b-instruct-q4_K_M,Credit Card Approval,DRL,false,0,4856,Test case 'Premium Card Approval' failed: Expected 1 rules to fire but got 2
+qwen2.5-coder:14b-instruct-q4_K_M,Email Validation,DRL,true,1,1213,
+qwen2.5-coder:14b-instruct-q4_K_M,Grade Calculation,DRL,true,1,3768,
+qwen2.5-coder:14b-instruct-q4_K_M,Insurance Premium Tier,DRL,true,1,3256,
+qwen2.5-coder:14b-instruct-q4_K_M,Insurance Risk Assessment,DRL,false,0,3009,Test case 'High Risk - Smoker' failed: Expected 1 rules to fire but got 2
+qwen2.5-coder:14b-instruct-q4_K_M,Inventory Alert,DRL,true,1,1408,
+qwen2.5-coder:14b-instruct-q4_K_M,Loan Approval Complex,DRL,true,3,3785,
+qwen2.5-coder:14b-instruct-q4_K_M,Loan Eligibility,DRL,true,1,1810,
+qwen2.5-coder:14b-instruct-q4_K_M,Loyalty Points,DRL,true,1,1606,
+qwen2.5-coder:14b-instruct-q4_K_M,Missing Document Alert,DRL,true,2,3065,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount by Customer Type,DRL,true,4,6450,
+qwen2.5-coder:14b-instruct-q4_K_M,Order Fraud Detection,DRL,true,3,4466,
+qwen2.5-coder:14b-instruct-q4_K_M,Password Strength,DRL,true,1,2406,
+qwen2.5-coder:14b-instruct-q4_K_M,Priority Assignment,DRL,true,1,3313,
+qwen2.5-coder:14b-instruct-q4_K_M,Senior Citizen Discount,DRL,true,2,2183,
+qwen2.5-coder:14b-instruct-q4_K_M,Shipping Cost,DRL,true,1,3319,
+qwen2.5-coder:14b-instruct-q4_K_M,Shipping Method Priority,DRL,true,7,4514,
+qwen2.5-coder:14b-instruct-q4_K_M,Simple Calculation,DRL,true,1,2060,
+qwen2.5-coder:14b-instruct-q4_K_M,Status Transition,DRL,true,1,1513,
+qwen2.5-coder:14b-instruct-q4_K_M,Subscription Renewal,DRL,true,5,3612,
+qwen2.5-coder:14b-instruct-q4_K_M,Tax Bracket,DRL,true,1,3625,
+qwen2.5-coder:14b-instruct-q4_K_M,Tax Calculation Chain,DRL,false,0,8456,"Test case 'Low Tax Bracket' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error salary cannot be resolved to a variable
+bonuses cannot be resolved to a variable
+investments cannot be resolved to a variable], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=26, column=0
+   text=Rule Compilation error dependents cannot be resolved to a variable
+expenses cannot be resolved to a variable], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=35, column=0
+   text=Rule Compilation error grossIncome cannot be resolved to a variable
+deductions cannot be resolved to a variable], Message [id=4, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=61, column=0
+   text=Rule Compilation error netIncome cannot be resolved to a variable]]"
+qwen2.5-coder:14b-instruct-q4_K_M,Order Discount - Tiered,DRL,true,1,3591,
+qwen3,Adult Validation,DRL,true,1,10348,
+qwen3,Age Classification,DRL,false,0,20444,"ERROR: [ERR 102] Line 13:44 mismatched input '<eof>' in rule ""Classify as CHILD""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+qwen3,Age Validation Simple,DRL,true,3,4530,
+qwen3,Order Discount - Basic,DRL,true,1,3722,
+qwen3,Bulk Order Discount,DRL,false,0,5517,"Test case 'Qualifies for VIP' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error The method setVip(boolean) is undefined for the type Customer]]"
+qwen3,Cart Validation,DRL,false,0,8226,"Test case 'Out of Stock Rejection' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Rule Compilation error The method modify(ShoppingCart) is undefined for the type Rule_Handle_out_of_stock_items1971308020
+Syntax error, insert "";"" to complete Statement
+The method setRejected(boolean) is undefined for the type Rule_Handle_out_of_stock_items1971308020
+The method setRejectionReason(String) is undefined for the type Rule_Handle_out_of_stock_items1971308020]]"
+qwen3,Credit Card Approval,DRL,false,0,20475,Validation exception: DRL code cannot be null or empty
+qwen3,Email Validation,DRL,true,1,8906,
+qwen3,Grade Calculation,DRL,true,1,10108,
+qwen3,Insurance Premium Tier,DRL,true,1,8859,
+qwen3,Insurance Risk Assessment,DRL,false,0,19892,Test case 'Medium Risk - Age Factor' failed: Expected 1 rules to fire but got 2
+qwen3,Inventory Alert,DRL,true,1,4131,
+qwen3,Loan Approval Complex,DRL,false,0,20488,"ERROR: [ERR 102] Line 7:24 mismatched input '<eof>'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+qwen3,Loan Eligibility,DRL,true,1,3736,
+qwen3,Loyalty Points,DRL,true,1,15521,
+qwen3,Missing Document Alert,DRL,false,0,20437,"Test case 'Adult Missing ID' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=13, column=0
+   text=Rule Compilation error The method modify(Application) is undefined for the type Rule_Incomplete_Application_$u45$_Identity_Document753720630
+Syntax error, insert "";"" to complete Statement
+The method setIncomplete(boolean) is undefined for the type Rule_Incomplete_Application_$u45$_Identity_Document753720630
+The method setMissingDocumentType(String) is undefined for the type Rule_Incomplete_Application_$u45$_Identity_Document753720630], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=20, column=0
+   text=Rule Compilation error The method modify(Application) is undefined for the type Rule_Incomplete_Application_$u45$_Income_Verification1652605343
+Syntax error, insert "";"" to complete Statement
+The method setIncomplete(boolean) is undefined for the type Rule_Incomplete_Application_$u45$_Income_Verification1652605343
+The method setMissingDocumentType(String) is undefined for the type Rule_Incomplete_Application_$u45$_Income_Verification1652605343]]"
+qwen3,Order Discount by Customer Type,DRL,true,4,8012,
+qwen3,Order Fraud Detection,DRL,false,0,10044,"Test case 'New Account High Value' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Flag_new_account_with_high_value_order2120369848
+Syntax error, insert "";"" to complete Statement
+The method setSuspicious(boolean) is undefined for the type Rule_Flag_new_account_with_high_value_order2120369848
+The method setSuspiciousReason(String) is undefined for the type Rule_Flag_new_account_with_high_value_order2120369848], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=34, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Flag_multiple_failed_payment_attempts885559767
+Syntax error, insert "";"" to complete Statement
+The method setSuspicious(boolean) is undefined for the type Rule_Flag_multiple_failed_payment_attempts885559767
+The method setSuspiciousReason(String) is undefined for the type Rule_Flag_multiple_failed_payment_attempts885559767], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Flag_mismatched_addresses_with_high_value_order1109407214
+Syntax error, insert "";"" to complete Statement
+The method setSuspicious(boolean) is undefined for the type Rule_Flag_mismatched_addresses_with_high_value_order1109407214
+The method setSuspiciousReason(String) is undefined for the type Rule_Flag_mismatched_addresses_with_high_value_order1109407214]]"
+qwen3,Password Strength,DRL,true,1,6233,
+qwen3,Priority Assignment,DRL,true,1,8384,
+qwen3,Senior Citizen Discount,DRL,true,2,7063,
+qwen3,Shipping Cost,DRL,true,1,10765,
+qwen3,Shipping Method Priority,DRL,false,0,20485,Validation exception: DRL code cannot be null or empty
+qwen3,Simple Calculation,DRL,false,0,9999,"Test case 'Calculate Tax' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Invoice) is undefined for the type Rule_CalculateTaxAndTotal1567200792
+Syntax error, insert "";"" to complete Statement
+The method setTaxAmount(double) is undefined for the type Rule_CalculateTaxAndTotal1567200792
+The method setTotal(double) is undefined for the type Rule_CalculateTaxAndTotal1567200792]]"
+qwen3,Status Transition,DRL,true,1,4659,
+qwen3,Subscription Renewal,DRL,true,5,10313,
+qwen3,Tax Bracket,DRL,true,1,7060,
+qwen3,Tax Calculation Chain,DRL,false,0,20348,Validation exception: DRL code cannot be null or empty
+qwen3,Order Discount - Tiered,DRL,true,1,5992,
+granite4,Adult Validation,DRL,false,0,6018,"ERROR: [ERR 102] Line 4:7 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Age Classification,DRL,true,4,1252,
+granite4,Age Validation Simple,DRL,false,0,609,"ERROR: [ERR 102] Line 3:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Order Discount - Basic,DRL,false,0,664,"ERROR: [ERR 102] Line 4:10 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Bulk Order Discount,DRL,false,0,796,"Test case 'Qualifies for VIP' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=11, column=0
+   text=Rule Compilation error The method modify(Customer) is undefined for the type Rule_Upgrade_to_VIP_if_high_spender1666589094
+Syntax error, insert "";"" to complete Statement
+The method setIsVip(boolean) is undefined for the type Rule_Upgrade_to_VIP_if_high_spender1666589094
+The method setDiscountPercent(int) is undefined for the type Rule_Upgrade_to_VIP_if_high_spender1666589094
+Syntax error, insert "";"" to complete Statement]]"
+granite4,Cart Validation,DRL,false,0,1411,"Test case 'Out of Stock Rejection' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=14, column=0
+   text=Rule Compilation error The method modify(ShoppingCart) is undefined for the type Rule_Validate_shopping_cart_$u45$_out_of_stock762510333
+Syntax error, insert "";"" to complete Statement
+The method setRejected(boolean) is undefined for the type Rule_Validate_shopping_cart_$u45$_out_of_stock762510333
+The method setRejectionReason(String) is undefined for the type Rule_Validate_shopping_cart_$u45$_out_of_stock762510333
+Syntax error, insert "";"" to complete Statement]]"
+granite4,Credit Card Approval,DRL,false,0,1944,"Test case 'Premium Card Approval' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=12, column=0
+   text=Rule Compilation error The method modify(CreditCardApplication) is undefined for the type Rule_Approve_Premium_Card379567768
+Syntax error, insert "";"" to complete Statement
+The method setDecision(String) is undefined for the type Rule_Approve_Premium_Card379567768
+The method setCardType(String) is undefined for the type Rule_Approve_Premium_Card379567768
+Syntax error, insert "";"" to complete Statement], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=19, column=0
+   text=Rule Compilation error The method modify(CreditCardApplication) is undefined for the type Rule_Approve_Standard_Card1656636094
+Syntax error, insert "";"" to complete Statement
+The method setDecision(String) is undefined for the type Rule_Approve_Standard_Card1656636094
+The method setCardType(String) is undefined for the type Rule_Approve_Standard_Card1656636094
+Syntax error, insert "";"" to complete Statement]]"
+granite4,Email Validation,DRL,false,0,417,"ERROR: [ERR 102] Line 5:10 mismatched input 'String'
+ERROR: [ERR 102] Line 6:10 mismatched input 'boolean'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Grade Calculation,DRL,false,0,1995,"ERROR: [ERR 102] Line 12:4 mismatched input 'query' in rule ""Assign Grade A""
+ERROR: [ERR 102] Line 12:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 20:4 mismatched input 'query' in rule ""Assign Grade B""
+ERROR: [ERR 102] Line 20:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 28:4 mismatched input 'query' in rule ""Assign Grade C""
+ERROR: [ERR 102] Line 28:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 36:4 mismatched input 'query' in rule ""Assign Grade D""
+ERROR: [ERR 102] Line 36:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 44:4 mismatched input 'query' in rule ""Assign Grade F""
+ERROR: [ERR 102] Line 44:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Insurance Premium Tier,DRL,false,0,1752,"ERROR: [ERR 102] Line 11:4 mismatched input 'ruleflow' in rule ""Smoker Premium Tier""
+ERROR: [ERR 102] Line 12:9 mismatched input '=' in query
+ERROR: [ERR 102] Line 22:4 mismatched input 'ruleflow' in rule ""Non-Smoker Age Tier""
+ERROR: [ERR 102] Line 23:9 mismatched input '=' in query
+ERROR: [ERR 102] Line 32:4 mismatched input 'ruleflow' in rule ""Non-Smoker Age Tier or Equal""
+ERROR: [ERR 102] Line 33:9 mismatched input '=' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Insurance Risk Assessment,DRL,false,0,1522,"ERROR: [ERR 102] Line 11:4 mismatched input 'query' in rule ""Assess Insurance Risk - High""
+ERROR: [ERR 102] Line 11:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 19:4 mismatched input 'query' in rule ""Assess Insurance Risk - Medium""
+ERROR: [ERR 102] Line 19:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 27:4 mismatched input 'query' in rule ""Assess Insurance Risk - Low""
+ERROR: [ERR 102] Line 27:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Inventory Alert,DRL,false,0,581,"ERROR: [ERR 102] Line 4:12 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Loan Approval Complex,DRL,false,0,1701,"ERROR: [ERR 102] Line 15:20 mismatched input '=' in rule ""Loan Approved""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Loan Eligibility,DRL,true,1,738,
+granite4,Loyalty Points,DRL,false,0,593,"ERROR: [ERR 102] Line 4:13 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Missing Document Alert,DRL,false,0,1278,"ERROR: [ERR 102] Line 14:4 mismatched input 'query' in rule ""Incomplete Application""
+ERROR: [ERR 102] Line 14:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 27:4 mismatched input 'query' in rule ""Incomplete Application""
+ERROR: [ERR 102] Line 27:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Order Discount by Customer Type,DRL,false,0,1378,"ERROR: [ERR 102] Line 3:14 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Order Fraud Detection,DRL,false,0,1942,"ERROR: [ERR 102] Line 15:4 mismatched input 'query' in rule ""Order Suspicious - Recent Account""
+ERROR: [ERR 102] Line 15:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 26:4 mismatched input 'query' in rule ""Order Suspicious - Shipping Billing Mismatch""
+ERROR: [ERR 102] Line 26:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 37:4 mismatched input 'query' in rule ""Order Suspicious - Multiple Failed Payments""
+ERROR: [ERR 102] Line 37:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Password Strength,DRL,false,0,1300,"ERROR: [ERR 102] Line 10:4 mismatched input 'query' in rule ""Password Strength Weak""
+ERROR: [ERR 102] Line 10:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 18:4 mismatched input 'query' in rule ""Password Strength Medium""
+ERROR: [ERR 102] Line 18:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 26:4 mismatched input 'query' in rule ""Password Strength Strong""
+ERROR: [ERR 102] Line 26:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Priority Assignment,DRL,false,0,1197,"Test case 'High Severity' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=16, column=0
+   text=Duplicate rule name: Set Priority based on Severity], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=23, column=0
+   text=Duplicate rule name: Set Priority based on Severity], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=30, column=0
+   text=Duplicate rule name: Set Priority based on Severity]]"
+granite4,Senior Citizen Discount,DRL,true,2,724,
+granite4,Shipping Cost,DRL,true,1,1066,
+granite4,Shipping Method Priority,DRL,false,0,1650,"ERROR: [ERR 101] Line 14:11 no viable alternative at input ':' in rule ""Select Shipping Method""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Simple Calculation,DRL,false,0,660,"ERROR: [ERR 102] Line 12:44 mismatched input ')' in rule ""CalculateTax""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Status Transition,DRL,true,1,591,
+granite4,Subscription Renewal,DRL,false,0,1672,"ERROR: [ERR 102] Line 13:4 mismatched input 'query' in rule ""Subscription RENEWING""
+ERROR: [ERR 102] Line 13:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 22:4 mismatched input 'query' in rule ""Subscription LAPSED""
+ERROR: [ERR 102] Line 22:9 mismatched input ':' in query
+ERROR: [ERR 102] Line 31:4 mismatched input 'query' in rule ""Subscription LOYALTY DISCOUNT""
+ERROR: [ERR 102] Line 31:9 mismatched input ':' in query
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Tax Bracket,DRL,true,1,1122,
+granite4,Tax Calculation Chain,DRL,false,0,3112,"ERROR: [ERR 102] Line 54:7 mismatched input 'modify' in rule ""Calculate Tax Owed""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+granite4,Order Discount - Tiered,DRL,false,0,1361,"Test case 'Premium Tier' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Order__dollar_200_or_more940106652
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Order__dollar_200_or_more940106652
+The method setDiscountTier(String) is undefined for the type Rule_Order__dollar_200_or_more940106652
+Syntax error, insert "";"" to complete Statement], Message [id=2, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=17, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Order__dollar_100_to_less_than__dollar_2001024849940
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Order__dollar_100_to_less_than__dollar_2001024849940
+The method setDiscountTier(String) is undefined for the type Rule_Order__dollar_100_to_less_than__dollar_2001024849940
+Syntax error, insert "";"" to complete Statement], Message [id=3, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=24, column=0
+   text=Rule Compilation error The method modify(Order) is undefined for the type Rule_Order__dollar_50_to_less_than__dollar_100942926165
+Syntax error, insert "";"" to complete Statement
+The method setDiscountPercent(int) is undefined for the type Rule_Order__dollar_50_to_less_than__dollar_100942926165
+The method setDiscountTier(String) is undefined for the type Rule_Order__dollar_50_to_less_than__dollar_100942926165
+Syntax error, insert "";"" to complete Statement]]"
+deepseek-coder-v2:16b,Adult Validation,DRL,false,0,27746,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Age Classification,DRL,false,0,2779,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Age Validation Simple,DRL,false,0,1172,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Order Discount - Basic,DRL,false,0,1069,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Bulk Order Discount,DRL,false,0,1330,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Cart Validation,DRL,false,0,2146,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Credit Card Approval,DRL,false,0,3056,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Email Validation,DRL,false,0,1281,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Grade Calculation,DRL,false,0,2701,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Insurance Premium Tier,DRL,false,0,2179,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Insurance Risk Assessment,DRL,false,0,2381,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Inventory Alert,DRL,false,0,1184,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Loan Approval Complex,DRL,false,0,4972,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Loan Eligibility,DRL,false,0,2221,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Loyalty Points,DRL,false,0,2121,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Missing Document Alert,DRL,false,0,2096,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Order Discount by Customer Type,DRL,false,0,3015,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Order Fraud Detection,DRL,false,0,2605,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Password Strength,DRL,false,0,1628,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Priority Assignment,DRL,false,0,2152,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Senior Citizen Discount,DRL,false,0,1694,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Shipping Cost,DRL,false,0,2154,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Shipping Method Priority,DRL,false,0,4219,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Simple Calculation,DRL,false,0,1394,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Status Transition,DRL,false,0,993,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Subscription Renewal,DRL,false,0,2288,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Tax Bracket,DRL,false,0,1972,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Tax Calculation Chain,DRL,false,0,5505,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+deepseek-coder-v2:16b,Order Discount - Tiered,DRL,false,0,2049,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Adult Validation,DRL,true,1,37676,
+phi4,Age Classification,DRL,false,0,6531,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Age Validation Simple,DRL,true,3,4165,
+phi4,Order Discount - Basic,DRL,false,0,2894,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Bulk Order Discount,DRL,false,0,4865,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Cart Validation,DRL,false,0,7017,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Credit Card Approval,DRL,false,0,8701,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Email Validation,DRL,true,1,1916,
+phi4,Grade Calculation,DRL,false,0,6378,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Insurance Premium Tier,DRL,false,0,5426,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Insurance Risk Assessment,DRL,false,0,6660,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Inventory Alert,DRL,true,1,2314,
+phi4,Loan Approval Complex,DRL,false,0,6315,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Loan Eligibility,DRL,false,0,3141,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Loyalty Points,DRL,false,0,2309,Test case 'Points Calculation' failed: class org.drools.generated.Rule_Calculate_Points1818175648 tried to access protected field org.drools.generated.Purchase.amount (org.drools.generated.Rule_Calculate_Points1818175648 is in unnamed module of loader org.drools.wiring.dynamic.PackageClassLoader @31068bbf; org.drools.generated.Purchase is in unnamed module of loader org.drools.wiring.dynamic.DynamicProjectClassLoader$DefaultInternalTypesClassLoader @5f2dc79d)
+phi4,Missing Document Alert,DRL,false,0,5329,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Order Discount by Customer Type,DRL,false,0,10812,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Order Fraud Detection,DRL,false,0,7737,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Password Strength,DRL,false,0,4420,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Priority Assignment,DRL,false,0,5839,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Senior Citizen Discount,DRL,false,0,3344,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Shipping Cost,DRL,false,0,4968,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Shipping Method Priority,DRL,false,0,7885,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Simple Calculation,DRL,false,0,2973,"Test case 'Calculate Tax' failed: Failed to execute DRL with JSON facts: DRL compilation errors: [Message [id=1, kieBase=defaultKieBase, level=ERROR, path=file0.drl, line=10, column=0
+   text=Rule Compilation error The method modify(Invoice) is undefined for the type Rule_Calculate_Tax_and_Total1482298759
+Syntax error, insert "";"" to complete Statement
+The method setTaxAmount(double) is undefined for the type Rule_Calculate_Tax_and_Total1482298759
+The method setTotal(double) is undefined for the type Rule_Calculate_Tax_and_Total1482298759]]"
+phi4,Status Transition,DRL,false,0,2532,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Subscription Renewal,DRL,false,0,5751,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Tax Bracket,DRL,false,0,5294,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Tax Calculation Chain,DRL,false,0,15671,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: [ERR 102] Line 20:32 mismatched input 'or' in rule ""Calculate Gross Income""
+ERROR: [ERR 102] Line 29:37 mismatched input 'and' in rule ""Calculate Deductions""
+ERROR: [ERR 102] Line 38:37 mismatched input 'and' in rule ""Calculate Net Income""
+ERROR: [ERR 102] Line 56:42 mismatched input 'and' in rule ""Determine Tax Bracket MEDIUM""
+ERROR: [ERR 102] Line 74:41 mismatched input 'and' in rule ""Calculate Tax Owed LOW""
+ERROR: [ERR 102] Line 83:44 mismatched input 'and' in rule ""Calculate Tax Owed MEDIUM""
+ERROR: [ERR 102] Line 92:42 mismatched input 'and' in rule ""Calculate Tax Owed HIGH""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+phi4,Order Discount - Tiered,DRL,false,0,6163,"Validation exception: DRL validation failed: ERROR: [ERR 107] Line 1:0 mismatched input 'java' expecting one of the following tokens: '[package, unit, import, global, declare, function, rule, query]'.
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Adult Validation,DRL,false,0,33870,"ERROR: [ERR 102] Line 5:15 mismatched input '{'
+ERROR: [ERR 102] Line 19:25 mismatched input '<eof>' in rule ""Check if person is 18 years or older""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Age Classification,DRL,false,0,26123,"ERROR: [ERR 102] Line 3:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Age Validation Simple,DRL,false,0,17780,"ERROR: [ERR 102] Line 3:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Order Discount - Basic,DRL,false,0,16326,"ERROR: [ERR 102] Line 5:14 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Bulk Order Discount,DRL,false,0,16679,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Cart Validation,DRL,false,0,32830,"ERROR: [ERR 102] Line 7:21 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Credit Card Approval,DRL,false,0,45410,"ERROR: [ERR 102] Line 13:30 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Email Validation,DRL,false,0,10128,"ERROR: [ERR 102] Line 5:21 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Grade Calculation,DRL,false,0,32475,"ERROR: [ERR 102] Line 5:16 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Insurance Premium Tier,DRL,false,0,28306,"ERROR: [ERR 102] Line 5:27 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Insurance Risk Assessment,DRL,false,0,28672,"ERROR: [ERR 102] Line 3:18 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Inventory Alert,DRL,false,0,12222,"ERROR: [ERR 102] Line 5:16 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Loan Approval Complex,DRL,false,0,45102,"ERROR: [ERR 102] Line 33:133 mismatched input '<eof>' in rule ""Deny Loan""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Loan Eligibility,DRL,false,0,24746,"ERROR: [ERR 102] Line 5:24 mismatched input '{'
+ERROR: [ERR 102] Line 22:23 mismatched input '<eof>' in rule ""Eligibility Check""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Loyalty Points,DRL,false,0,31822,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: Unexpected error: Cannot invoke ""org.antlr.runtime.BitSet.toArray()"" because ""set"" is null
+ERROR: Unexpected error: Index 182 out of bounds for length 182
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Missing Document Alert,DRL,false,0,21115,"ERROR: [ERR 102] Line 5:20 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Order Discount by Customer Type,DRL,false,0,20748,"ERROR: [ERR 102] Line 5:14 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Order Fraud Detection,DRL,false,0,22386,"ERROR: [ERR 102] Line 3:14 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Password Strength,DRL,false,0,20309,"ERROR: [ERR 102] Line 3:17 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Priority Assignment,DRL,false,0,28802,"ERROR: [ERR 102] Line 5:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Senior Citizen Discount,DRL,false,0,14934,"ERROR: [ERR 102] Line 3:15 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Shipping Cost,DRL,false,0,24767,"ERROR: [ERR 102] Line 5:22 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Shipping Method Priority,DRL,false,0,46961,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: [ERR 102] Line 48:23 mismatched input '<eof>' in rule ""Shipping Method - Default""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Simple Calculation,DRL,false,0,22764,"ERROR: [ERR 102] Line 5:16 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Status Transition,DRL,false,0,11791,"ERROR: [ERR 102] Line 3:13 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Subscription Renewal,DRL,false,0,36752,"ERROR: [ERR 102] Line 5:21 mismatched input '{'
+ERROR: [ERR 102] Line 37:23 mismatched input '<eof>' in rule ""Loyalty Discount""
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Tax Bracket,DRL,false,0,24743,"ERROR: [ERR 102] Line 5:17 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Tax Calculation Chain,DRL,false,0,74130,"ERROR: [ERR 102] Line 3:18 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
+codellama:13b,Order Discount - Tiered,DRL,false,0,31531,"ERROR: [ERR 102] Line 5:14 mismatched input '{'
+ERROR: Parser returned a null Package
+ERROR: Verifier could not form a PackageDescr from the resources that it was trying to verify."
