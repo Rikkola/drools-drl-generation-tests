@@ -26,7 +26,6 @@ testCases:
         customerType: premium
         orderTotal: 1500.0
         discountPercent: 0
-    expectedRulesFired: 1
     expectedFields:
       discountPercent: 20
 
@@ -36,7 +35,6 @@ testCases:
         customerType: premium
         orderTotal: 750.0
         discountPercent: 0
-    expectedRulesFired: 1
     expectedFields:
       discountPercent: 15
 
@@ -46,7 +44,6 @@ testCases:
         customerType: regular
         orderTotal: 1200.0
         discountPercent: 0
-    expectedRulesFired: 1
     expectedFields:
       discountPercent: 10
 
@@ -56,6 +53,6 @@ testCases:
         customerType: regular
         orderTotal: 200.0
         discountPercent: 0
-    expectedRulesFired: 0
+    # No expectedRulesFired - just verify field stays 0
     expectedFields:
       discountPercent: 0

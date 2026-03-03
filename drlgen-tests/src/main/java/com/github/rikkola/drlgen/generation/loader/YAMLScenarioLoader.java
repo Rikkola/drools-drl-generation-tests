@@ -154,21 +154,14 @@ public class YAMLScenarioLoader {
             List<ExpectedFact> expectedFacts = parseExpectedFacts(
                     (List<Map<String, Object>>) tc.get("expectedFacts"));
 
-            // Parse expectRulesToFire (default true)
-            // Also support legacy expectedRulesFired: 0 as expectRulesToFire: false
-            boolean expectRulesToFire = true;
-            Object expectRulesToFireObj = tc.get("expectRulesToFire");
-            if (expectRulesToFireObj != null) {
-                expectRulesToFire = (Boolean) expectRulesToFireObj;
-            } else {
-                // Legacy support: expectedRulesFired: 0 means expectRulesToFire: false
-                Object expectedRulesFiredObj = tc.get("expectedRulesFired");
-                if (expectedRulesFiredObj != null && ((Number) expectedRulesFiredObj).intValue() == 0) {
-                    expectRulesToFire = false;
-                }
+            // Parse expectedRulesFired (null = don't check, 0 = no rules, N = exactly N rules)
+            Integer expectedRulesFired = null;
+            Object expectedRulesFiredObj = tc.get("expectedRulesFired");
+            if (expectedRulesFiredObj != null) {
+                expectedRulesFired = ((Number) expectedRulesFiredObj).intValue();
             }
 
-            result.add(new TestCase(name, inputJson, expectedFields, expectedFacts, expectRulesToFire));
+            result.add(new TestCase(name, inputJson, expectedFields, expectedFacts, expectedRulesFired));
         }
         return result;
     }

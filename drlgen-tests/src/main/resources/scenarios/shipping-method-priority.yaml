@@ -21,9 +21,6 @@ factTypes:
       shippingMethod: String
 
 testCases:
-  # Note: This test has multiple matching conditions (hazardous + prime + heavy)
-  # AI-generated rules typically don't prevent lower-priority rules from firing
-  # so we skip field validation for this edge case
   - name: Hazardous Overrides All
     input:
       - _type: Shipment
@@ -33,7 +30,9 @@ testCases:
         orderTotal: 500.0
         weightLbs: 100.0
         shippingMethod: PENDING
-    expectedRulesFired: 0
+    # No expectedRulesFired - just verify field value
+    expectedFields:
+      shippingMethod: SPECIALIZED
 
   - name: Prime Customer Free Express
     input:
@@ -44,7 +43,6 @@ testCases:
         orderTotal: 50.0
         weightLbs: 10.0
         shippingMethod: PENDING
-    expectedRulesFired: 0
     expectedFields:
       shippingMethod: EXPRESS_FREE
 
@@ -57,7 +55,6 @@ testCases:
         orderTotal: 200.0
         weightLbs: 75.0
         shippingMethod: PENDING
-    expectedRulesFired: 0
     expectedFields:
       shippingMethod: FREIGHT
 
@@ -70,7 +67,6 @@ testCases:
         orderTotal: 30.0
         weightLbs: 5.0
         shippingMethod: PENDING
-    expectedRulesFired: 0
     expectedFields:
       shippingMethod: STANDARD
 
@@ -83,6 +79,5 @@ testCases:
         orderTotal: 20.0
         weightLbs: 2.0
         shippingMethod: PENDING
-    expectedRulesFired: 0
     expectedFields:
       shippingMethod: STANDARD

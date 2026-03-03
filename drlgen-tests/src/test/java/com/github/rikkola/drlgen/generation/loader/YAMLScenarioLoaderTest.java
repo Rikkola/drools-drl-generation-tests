@@ -62,13 +62,24 @@ class YAMLScenarioLoaderTest {
     }
 
     @Test
-    void shouldParseExpectRulesToFire() {
+    void shouldParseExpectedRulesFired() {
         TestScenario scenario = loader.loadScenario("adult-validation.yaml");
 
-        // First test case expects rules to fire (default or explicit)
-        assertThat(scenario.testCases().get(0).expectRulesToFire()).isTrue();
-        // Second test case expects no rules to fire (expectedRulesFired: 0)
-        assertThat(scenario.testCases().get(1).expectRulesToFire()).isFalse();
+        // First test case expects 1 rule to fire
+        assertThat(scenario.testCases().get(0).expectedRulesFired()).isEqualTo(1);
+        // Second test case expects 0 rules to fire
+        assertThat(scenario.testCases().get(1).expectedRulesFired()).isEqualTo(0);
+    }
+
+    @Test
+    void shouldParseNullExpectedRulesFired() {
+        // order-discount-customer-type.yaml has test cases without expectedRulesFired
+        TestScenario scenario = loader.loadScenario("order-discount-customer-type.yaml");
+
+        // All test cases should have null expectedRulesFired (not specified)
+        for (TestScenario.TestCase tc : scenario.testCases()) {
+            assertThat(tc.expectedRulesFired()).isNull();
+        }
     }
 
     @Test

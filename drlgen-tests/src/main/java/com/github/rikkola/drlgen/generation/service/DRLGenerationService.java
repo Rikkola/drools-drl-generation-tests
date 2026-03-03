@@ -185,19 +185,12 @@ public class DRLGenerationService {
                 logger.info("Test case '{}': {} rules fired, {} facts in working memory",
                         testCase.name(), result.firedRules(), result.objects().size());
 
-                // Verify rules fired based on expectation
-                if (testCase.expectRulesToFire() && result.firedRules() == 0) {
-                    String error = "No rules fired - the generated rules did not match the input facts";
-                    logger.error("Test case '{}' failed: {}", testCase.name(), error);
+                // Verify rules fired count if specified
+                String rulesFiredError = testCase.validateRulesFired(result.firedRules());
+                if (rulesFiredError != null) {
+                    logger.error("Test case '{}' failed: {}", testCase.name(), rulesFiredError);
                     return GenerationResult.partial(modelName, generatedDrl, true,
-                            "Test case '" + testCase.name() + "' failed: " + error,
-                            genTime, Duration.between(start, Instant.now()));
-                }
-                if (!testCase.expectRulesToFire() && result.firedRules() > 0) {
-                    String error = "Expected no rules to fire, but " + result.firedRules() + " fired";
-                    logger.error("Test case '{}' failed: {}", testCase.name(), error);
-                    return GenerationResult.partial(modelName, generatedDrl, true,
-                            "Test case '" + testCase.name() + "' failed: " + error,
+                            "Test case '" + testCase.name() + "' failed: " + rulesFiredError,
                             genTime, Duration.between(start, Instant.now()));
                 }
 

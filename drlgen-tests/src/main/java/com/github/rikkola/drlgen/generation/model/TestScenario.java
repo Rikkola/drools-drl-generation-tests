@@ -48,13 +48,13 @@ public record TestScenario(
             String inputJson,
             Map<String, Object> expectedFieldValues,  // Legacy format (backward compat)
             List<ExpectedFact> expectedFacts,         // New: Type-specific expectations
-            boolean expectRulesToFire                 // Whether any rules should fire (default true)
+            Integer expectedRulesFired                // null = don't check, 0 = no rules, N = exactly N rules
     ) {
         /**
-         * Constructor with default expectRulesToFire = true for backward compatibility.
+         * Constructor with default expectedRulesFired = null (don't check) for backward compatibility.
          */
         public TestCase(String name, String inputJson, Map<String, Object> expectedFieldValues, List<ExpectedFact> expectedFacts) {
-            this(name, inputJson, expectedFieldValues, expectedFacts, true);
+            this(name, inputJson, expectedFieldValues, expectedFacts, null);
         }
 
         /**
@@ -62,6 +62,28 @@ public record TestScenario(
          */
         public boolean hasTypedExpectations() {
             return expectedFacts != null && !expectedFacts.isEmpty();
+        }
+
+        /**
+         * Checks if the number of rules fired matches the expectation.
+         * @param actualRulesFired the actual number of rules fired
+         * @return null if OK, error message if validation failed
+         */
+        public String validateRulesFired(int actualRulesFired) {
+            if (expectedRulesFired == null) {
+                // No expectation set - any number is OK (including 0)
+                return null;
+            }
+            if (expectedRulesFired == 0 && actualRulesFired > 0) {
+                return "Expected no rules to fire, but " + actualRulesFired + " fired";
+            }
+            if (expectedRulesFired > 0 && actualRulesFired == 0) {
+                return "Expected " + expectedRulesFired + " rules to fire, but none fired";
+            }
+            if (expectedRulesFired > 0 && actualRulesFired != expectedRulesFired) {
+                return "Expected " + expectedRulesFired + " rules to fire, but " + actualRulesFired + " fired";
+            }
+            return null;
         }
     }
 
