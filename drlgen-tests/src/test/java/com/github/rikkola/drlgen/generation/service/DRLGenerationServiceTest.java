@@ -202,7 +202,24 @@ class DRLGenerationServiceTest {
         void shouldDetectNoRulesFired() {
             // Given - DRL that compiles but conditions don't match
             when(mockAgent.generateDRL(any(), any(), any())).thenReturn(NON_MATCHING_DRL);
-            TestScenario scenario = createAdultValidationScenario();
+            // Create scenario that explicitly expects 1 rule to fire
+            TestScenario scenario = new TestScenario(
+                    "Adult Validation",
+                    "Validates if a person is an adult based on age",
+                    "If a person's age is 18 or older, mark them as adult",
+                    List.of(new FactTypeDefinition("Person", Map.of(
+                            "name", "String",
+                            "age", "int",
+                            "adult", "boolean"
+                    ))),
+                    List.of(new TestCase(
+                            "Adult person",
+                            "[{\"_type\":\"Person\", \"name\":\"John\", \"age\":25, \"adult\":false}]",
+                            Map.of(),
+                            List.of(new ExpectedFact("Person", Map.of("adult", true))),
+                            1  // expectedRulesFired = 1
+                    ))
+            );
 
             // When
             GenerationResult result = service.generateAndTest(mockModel, scenario);
@@ -211,7 +228,7 @@ class DRLGenerationServiceTest {
             assertThat(result.isSuccessful()).isFalse();
             assertThat(result.validationPassed()).isTrue();  // DRL is valid
             assertThat(result.executionPassed()).isFalse();  // But execution failed
-            assertThat(result.executionMessage()).contains("No rules fired");
+            assertThat(result.executionMessage()).contains("rules to fire, but none fired");
         }
     }
 
