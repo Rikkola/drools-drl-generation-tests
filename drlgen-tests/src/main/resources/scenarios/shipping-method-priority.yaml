@@ -2,13 +2,15 @@ name: Shipping Method Priority
 description: Select shipping method based on priority rules
 
 requirement: |
-  Select shipping method with these priorities (first match wins, use salience):
-  1. If isHazardous is true, set shippingMethod to "SPECIALIZED" (highest priority)
-  2. If isPrimeCustomer is true AND orderTotal > 25, set shippingMethod to "EXPRESS_FREE"
-  3. If weightLbs > 50, set shippingMethod to "FREIGHT"
-  4. Otherwise set shippingMethod to "STANDARD" (lowest priority, default)
+  Select shipping method based on priority. Each rule must check that shippingMethod is still "PENDING"
+  before modifying it (to ensure only the highest priority rule takes effect):
 
-  Only one rule should fire based on priority.
+  1. If shippingMethod == "PENDING" AND isHazardous is true, set shippingMethod to "SPECIALIZED"
+  2. If shippingMethod == "PENDING" AND isPrimeCustomer is true AND orderTotal > 25, set shippingMethod to "EXPRESS_FREE"
+  3. If shippingMethod == "PENDING" AND weightLbs > 50, set shippingMethod to "FREIGHT"
+  4. If shippingMethod == "PENDING", set shippingMethod to "STANDARD" (default fallback)
+
+  Use salience to control priority order (highest salience = highest priority).
 
 factTypes:
   - name: Shipment
